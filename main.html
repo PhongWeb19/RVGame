@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>Thiết kế WebSite Phong Bá</title>
+    <title>RVGAME-Trang chủ</title>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="links-menu">
+                <div id="menu">
+                    <a href="#"><img src="./logo/RG.png" alt=""></a>
+                    <ul id="ul-menu">
+                        <li><a href="#">GAME MOBILE</a></li>
+                        <li><a href="#">GAME PC</a></li>
+                        <li><a href="#">ESPORTS</a></li>
+                        <li><a href="#">CỘNG ĐỒNG</a></li>
+                    </ul>
+                </div>
+                <div id="search">
+                    <input type="text" placeholder="Tìm Kiếm...">
+                    <i class="fas fa-search icon-menu"></i> 
+                </div> 
+            </div>
+            <div id="nav">
+                <ul id="ul-nav">
+                    <li><a href="#">Liên Minh Huyền Thoại</a></li>
+                    <li><a href="#">Liên Quân Mobile</a></li>
+                    <li><a href="#">Fifa Online 4</a></li>
+                    <li><a href="#">FootBall Manager</a></li>
+                    <li id="main-sub">
+                        <a href="#">Khác</a>
+                        <ul id="sub-nav">
+                            <li><a href="">Hành động</a></li>
+                            <li><a href="">Phiêu lưu</a></li>
+                            <li><a href="">Trí tuệ</a></li>
+                            <li><a href="">Thẻ bài</a></li>
+                            <li><a href="">Câu đố</a></li>
+                            <li><a href="">Đua xe</a></li>
+                            <li><a href="">Nhập vai</a></li>
+                            <li><a href="">Mô Phỏng</a></li>
+                            <li><a href="">Thể thao</a></li>
+                            <li><a href="">Chiến lược</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <div id="video">
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="./video/0524.mp4" type ="video/mp4">
+            </video>
+    
+            <div id="video-content">
+                <div class="video-text-content">
+                    <div class="main-text">
+                        <h1><strong>RVGAME</strong> đánh giá vì cộng đồng Game thủ</h1>
+                    </div>
+                    <div class="button-content">
+                        <button class="js-watch-trailer">Xem Video</button>
+                        <button>Giới Thiệu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="content">
+            <div id="body-content">
+                <div id="text-content">
+                    <h1>RVGAME</h1>
+                    <p>Chào mừng đến với WebSite đánh giá game hàng đầu. Chúng tôi cung cấp các đánh giá chính xác và đáng tin cậy về các tựa game nổi tiếng do các người chơi đánh giá. Hãy để chúng tôi giúp bạn khám phá những trải nghiệm chơi game tuyệt vời nhất.</p>
+                    <i class="fa-solid fa-mobile-screen-button icon-content"></i>
+                    <i class="fa-brands fa-xbox icon-content"></i>
+                    <i class="fa-solid fa-desktop icon-content"></i>
+                    <div id="button-content">
+                        <button>Đọc Thêm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="content-users">
+                <div id="text-content-users">
+                    <h1>RVGAME</h1>
+                    <p>Hãy tham gia ngay vào trang web đánh giá game của chúng tôi để cùng khám phá những đánh giá chân thực và đáng tin cậy về các tựa game hot nhất. Đăng ký ngay để không bỏ lỡ bất kỳ thông tin và trải nghiệm game nào đáng chú ý!</p>
+                    <button>Đăng Kí NGAY</button>
+                </div>
+        </div>
+        
+        <div id="footter">
+            <div id="body-footter">
+                <h1>FOLLOW <strong>RVGAME</strong> </h1>
+                <i class="fa-brands fa-youtube icon-footter"></i>
+                <i class="fa-brands fa-tiktok icon-footter"></i>
+                <i class="fa-brands fa-facebook icon-footter"></i>
+            </div>
+            <p>Website  Design & Development Phong Ba</p>
+        </div>
+    </div>
+
+
+    <div class="watch-trailer">
+        <div id="body-trailer">
+            <h3><strong>ARSENAL</strong> VÔ ĐỊCH</h3>
+            <i class="fa-solid fa-x fa-beat icon-watch-trailer js-icon-watch-trailer"></i>    
+            <div id="body-watch">
+                <iframe id="myVideo" width="1200" height="500" src="https://www.youtube.com/embed/NSjZeKYKMok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const openwatch = document.querySelector('.js-watch-trailer')
+        const closewatch = document.querySelector('.watch-trailer') 
+        var video = document.getElementById('myVideo')
+        function showtrailer ()
+        {
+            closewatch.classList.add('open')
+            video.muted = false;
+        }
+        function closetrailer()
+        {
+            closewatch.classList.remove('open')
+            video.pause();
+            video.muted = true; // Tắt âm thanh khi đóng video
+            video.currentTime = 0;
+        }
+        openwatch.addEventListener('click',showtrailer)
+        closewatch.addEventListener('click',closetrailer)
+    </script>
+</body>
+</html>

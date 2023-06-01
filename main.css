@@ -1,0 +1,430 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+html
+{
+    background-color: black;
+}
+
+#header
+{
+    background: black;
+    width: 100%;
+}
+#header #menu
+{
+    display: inline-block;
+} 
+
+#header  img
+{
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 8rem;
+}
+
+#header #ul-menu
+{
+    padding-left: 195px;
+    display: inline-block;
+}
+
+
+
+#header #ul-menu li
+{
+    display: inline-block;
+    list-style: none;
+    padding: 0px 30px;
+    line-height: 80px;
+}
+
+#header #ul-menu a
+{ 
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#header #ul-menu a:hover
+{
+    color: #5ce1c6;
+    transition: 0.5s;
+    padding-bottom: 10px;
+    border-bottom: 2px solid;
+}
+
+#header #search
+{
+    float: right;
+    display: inline-block;
+    line-height: 80px;
+}
+
+#header #search input
+{
+    margin-right: 30px;
+    padding: 10px 9rem 10px 10px;
+}
+
+#header #search .icon-menu{
+    color: black;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    padding: 12px;
+}
+
+#header #search .icon-menu:hover
+{
+    cursor: pointer;
+    color: white;
+    background-color: #2dae94;
+}
+
+#header #nav
+{
+    background-color: #8c52ff;
+
+}
+#header #nav
+{
+    width: 80%;
+    margin: auto;
+    height: 50px;
+}
+
+#header #ul-nav
+{
+    text-align: center;
+
+}
+
+#header #ul-nav li
+{
+    list-style: none;
+    display: inline-block;
+}
+
+#header #ul-nav a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding:0px 15px;
+    line-height: 50px;
+    display: inline-block;
+}
+
+#header #ul-nav >li:hover >a
+{
+    color: black;
+    background-color: #5ce1c6;
+}
+
+#header #ul-nav #main-sub
+{
+    position: relative;
+}
+
+#header #main-sub:hover #sub-nav
+{
+    display: block;
+    z-index: 2;
+}
+#header #main-sub #sub-nav
+{
+    position: absolute;
+    width: 150px;
+    text-align: left;
+    display: none;
+    background-color:#8c52ff;
+}
+#header  #sub-nav a,
+#header  #sub-nav li
+{
+    width: 100%;
+}
+
+#header  #sub-nav a:hover
+{
+    background-color: #5ce1c6;
+    color: black;
+}
+
+#video-content 
+{
+    text-align: center;   
+    position: absolute;
+    top: 10rem;
+   left: 0rem;
+}
+
+#video-content .video-text-content
+{
+}
+
+#video-content .video-text-content strong
+{
+    color: #5ce1c6;
+}
+
+#video-content .video-text-content h1
+{
+    font-size: 4rem;
+    color: white;
+    font-weight: 900;
+}
+
+
+#video-content .button-content button
+{
+    padding: 10px 30px;
+    margin: 0 15px;
+    background-color: #8c52ff;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+#video-content .button-content button:hover
+{
+    cursor: pointer;
+    opacity: 0.7;
+}
+#video
+{
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.back-video
+{
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
+#content
+{
+    background-image: url(./img/anh1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#content #body-content
+{
+    width: 70%;
+    padding: 50px 0;
+    text-align: center;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#content #body-content #text-content
+{
+    background-image: url(./img/anh3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10% 20%;
+}
+
+#content #body-content p,
+#content #body-content h1
+{
+    color: white;
+
+}
+#content #body-content h1
+{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+#content #body-content p
+{
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+#content .icon-content
+{
+    color: white;
+    padding: 1rem 0.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#content .icon-content:hover
+{
+    color:#5ce1c6;
+}
+
+#content #button-content
+{
+    padding: 1rem 0;
+}
+
+#content #button-content button
+{
+    padding: 8px 40px;
+    background-color:  #8c52ff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+}
+
+#content #button-content button:hover
+{
+    opacity: 0.7;
+}
+
+#content-users 
+{
+    background-image: url(./img/anh2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20% 5%;
+}
+
+
+#content-users h1
+{
+    color: #5ce1c6;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+
+#content-users #text-content-users
+{
+    width: 40%;
+    text-align: center;
+}
+
+#content-users #text-content-users p
+{
+    color: white;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    padding-bottom: 1rem;
+}
+
+#content-users #text-content-users button
+{
+    padding: 10px 3rem;
+    color: white;
+    background-color: #8c52ff;
+    border: none;
+    font-weight: 700;
+}
+
+#content-users #text-content-users button:hover
+{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#footter
+{
+    background-image: url(./img/anh4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 2rem;
+}
+
+#footter #body-footter h1
+{
+    color: white;
+}
+#footter #body-footter strong
+{
+    color:#5ce1c6;
+}
+
+#footter #body-footter .icon-footter
+{
+    color: white;
+    padding: 2rem 1.6rem;
+    font-size: 1.4rem;
+}
+
+#footter #body-footter .icon-footter:hover
+{
+    color:#5ce1c6;
+    cursor: pointer;
+}
+
+#footter p
+{
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.watch-trailer
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+    display: none;
+}
+.watch-trailer #body-trailer
+{
+    padding: 3rem 0;
+    display: inline-block;
+}
+
+.watch-trailer #body-trailer h3
+{
+    color: white;
+}
+.watch-trailer #body-trailer strong
+{
+    color:rgb(234, 56, 56);
+    font-size: 1.2rem;
+}
+
+.watch-trailer #body-trailer .icon-watch-trailer
+{
+    color: white;
+    float: right;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.watch-trailer #body-trailer .icon-watch-trailer:hover
+{
+    opacity: 0.7;
+}
+
+.watch-trailer.open
+{
+    display: block;
+}
+
+.video.close
+{
+    
+}
